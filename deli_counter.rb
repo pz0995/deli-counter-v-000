@@ -42,12 +42,12 @@ katz_deli = []
     katz_deli = []
 
 
-          if  katz_deli.length != 0
+          if  katz_deli.count != 0
           katz_deli.each.with_index(1) do |katz_deli, index|
           katz_deli.push("#{index}. #{katz_deli}")
           puts "The line is currently: #{katz_deli.join(" ")}"
         end
-          if katz_deli.length == 0
+          if katz_deli.count == 0
           puts "The line is currently empty."
         end
         end
