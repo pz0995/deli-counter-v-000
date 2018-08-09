@@ -4,8 +4,8 @@ katz_deli = []
 
     # line = katz_deli.count.to_i
 
-  
-    
+
+
 def line(katz_deli)
 
 if katz_deli.count == 0
@@ -21,7 +21,7 @@ else
     puts "The line is currently: #{line.join(" ")}"
 
 end
-
+end
 
 
     # if katz_deli.empty?
@@ -56,10 +56,10 @@ end
 #                                                                 puts index. katz_deli
 #                                                                 katz_deli.push(person)
 # index =+ 1
-# 
+#
 #     katz_deli = []
-# 
-# 
+#
+#
 #           if  katz_deli.count != 0
 #           katz_deli.each.with_index(1) do |katz_deli, index|
 #           katz_deli.line.push("#{index}. #{katz_deli}")
