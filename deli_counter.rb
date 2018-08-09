@@ -44,7 +44,7 @@ katz_deli = []
 
           if  katz_deli.count != 0
           katz_deli.each.with_index(1) do |katz_deli, index|
-          katz_deli.push("#{index}. #{katz_deli}")
+          katz_deli.line.push("#{index}. #{katz_deli}")
           puts "The line is currently: #{katz_deli.join(" ")}"
         end
           if katz_deli.count == 0
