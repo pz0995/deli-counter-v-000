@@ -4,7 +4,25 @@ katz_deli = []
 
     # line = katz_deli.count.to_i
 
-  def line(katz_deli)
+  
+    
+def line(katz_deli)
+
+if katz_deli.count == 0
+
+    puts "The line is currently empty."
+
+else
+
+    line = []
+
+  katz_deli.each_with_index  {|name, index| line.push("#{index +1 }.", name)}
+
+    puts "The line is currently: #{line.join(" ")}"
+
+end
+
+
 
     # if katz_deli.empty?
     #   puts "The line is currently empty."
@@ -38,20 +56,20 @@ katz_deli = []
 #                                                                 puts index. katz_deli
 #                                                                 katz_deli.push(person)
 # index =+ 1
-
-    katz_deli = []
-
-
-          if  katz_deli.count != 0
-          katz_deli.each.with_index(1) do |katz_deli, index|
-          katz_deli.line.push("#{index}. #{katz_deli}")
-          puts "The line is currently: #{katz_deli.join(" ")}"
-        end
-          if katz_deli.count == 0
-          puts "The line is currently empty."
-        end
-        end
-end
+# 
+#     katz_deli = []
+# 
+# 
+#           if  katz_deli.count != 0
+#           katz_deli.each.with_index(1) do |katz_deli, index|
+#           katz_deli.line.push("#{index}. #{katz_deli}")
+#           puts "The line is currently: #{katz_deli.join(" ")}"
+#         end
+#           if katz_deli.count == 0
+#           puts "The line is currently empty."
+#         end
+#         end
+# end
       #
       # print "The line is currently:"
       # print katz_deli.each_with_index {|person, index|   " #{index +1}. #{person}" }
