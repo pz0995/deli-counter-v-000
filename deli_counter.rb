@@ -1,36 +1,42 @@
-class Deli_counter
-
-  attr_accessor :person, :katz_deli
 
 
+katz_deli = []
 
-  def initialize
-    @person = person
-    @katz_deli = []
-  end
+    # line = katz_deli.count.to_i
 
-  def take_a_number(katz_deli, person)
-    if deli_counter.new
-      deli_counter.new.count times do
-      @katx_deli << person && katz_deli.count.to_i + 1
-    else
-      return "Welcome, #{person}. You are number #{katz_deli.count} in line."
-    end
-  end
 
-def line
-  if @katz_deli.empty?
-    return "The line is currently empty."
-  else
-    return "The line is currently: #{@katz_deli}"
+
+def line(katz_deli)
+
+if katz_deli.count == 0
+
+    puts "The line is currently empty."
+
+else
+
+    line = []
+
+  katz_deli.each_with_index  {|name, index| line.push("#{index +1 }.", name)}
+
+    puts "The line is currently: #{line.join(" ")}"
+
   end
 end
+
+
+
+              katz_deli.push(person)
+
+        puts "Welcome, #{katz_deli[-1]}. You are number #{katz_deli.length} in line."
+
+    # end
+
+    end
 
   def now_serving(katz_deli)
-    if @katz_deli.empty?
-      return "There is nobody waiting to be served!"
+    if katz_deli.empty?
+      puts "There is nobody waiting to be served!"
     else
-      return "Currently serving #{@katz_deli.shift}."
+      puts "Currently serving #{katz_deli.shift}."
     end
   end
-end
